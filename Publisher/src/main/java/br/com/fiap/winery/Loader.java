@@ -6,10 +6,10 @@ public class Loader {
     public static void main(String[] args) {
         WineStockServiceImplementation wineStock = new WineStockServiceImplementation();
         Endpoint.publish("http://localhost:8085/WineStockService", wineStock);
-        System.out.println("Serviço Stock publicado!");
+        System.out.println("Serviço publicado!");
 
         WineWarningServiceImplementation wineWarning = new WineWarningServiceImplementation();
         Endpoint.publish("http://localhost:8086/WineWarningService", wineWarning);
-        System.out.println("Serviço Warning publicado!");
+        System.out.println("Serviço publicado!");
     }
 }
